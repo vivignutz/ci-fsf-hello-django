@@ -20,12 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 
-
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'https://8000-vivignutz-cifsfhellodja-6npehg67oq8.ws-eu80.gitpod.io']
+
+
+# Trusted Origins
+CSRF_TRUSTED_ORIGINS = ['https://8000-vivignutz-cifsfhellodja-6npehg67oq8.ws-eu80.gitpod.io']
 
 
 # Application definition
